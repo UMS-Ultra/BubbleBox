@@ -295,6 +295,8 @@ As mentioned above, the files are made to print with a .4mm nozzle at a .2mm lay
 
  ## 17: Test everything out.
  Once you verify everything is functioning, you're done constructing your BubbleBox!
+
+ ![image](Images/BubbleBox%20Light%20Blue%20and%20Purple%20Hex%20Keycaps.jpg)
  ___
 ## Adding Gription
 
