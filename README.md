@@ -31,11 +31,11 @@ And your computer will make the noise that it makes when you plug in a new devic
 
 To check that your controller is being recognized _as_ a controller, hit Win+R and run `joy.cpl` to open the USB Game Controller setup window:
 
-![image](Images/Running%20JoyCPL.png)
+![image](Images/Running%20JoyCPL.PNG)
 
 And if you see "Pico" show up as a device, you've done it correctly.
 
-![image](Images/Pico%20Device%20Window.png)
+![image](Images/Pico%20Device%20Window.PNG)
 
 If not, who knows where you biffed it.
 
