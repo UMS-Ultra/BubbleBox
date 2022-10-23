@@ -6,7 +6,7 @@
 
 # Important License Infomation
 
-This project is licensed under the CERN-OHL-S v2 open source license. This is a "strongely recipricol copyleft" license that allows free use of the files, but requires you to publish any modifications you make to the project under the same license, if you distribute your own files or sell versions that you produce. You are also compelled to link back to this github repository (https://github.com/UMS-Ultra/BubbleBox) in your own repository and/or where you sell them. Please check out the license.txt file to learn how you are allowed to use the files, and check out https://ohwr.org/cernohl for more information and CERNs FAQ.
+This project is licensed under the CERN-OHL-S v2 open source license. This is a "strongly reciprocal copyleft" license that allows free use of the files, but requires you to publish any modifications you make to the project under the same license, if you distribute your own files or sell versions that you produce. You are also compelled to link back to this github repository (https://github.com/UMS-Ultra/BubbleBox) in your own repository and/or where you sell them. Please check out the license.txt file to learn how you are allowed to use the files, and check out https://ohwr.org/cernohl for more information and CERNs FAQ.
 
 
 # Installing and Updating Firmware
