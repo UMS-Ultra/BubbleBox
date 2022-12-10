@@ -4,7 +4,7 @@
 ![image](Images/BubbleBox%20Black%20and%20Light%20Grey%20Hex%20Keycaps.jpg)
 
 
-# Important License Infomation
+# Important License Information
 
 This project is licensed under the CERN-OHL-S v2 open source license. This is a "strongly reciprocal copyleft" license that allows free use of the files, but requires you to publish any modifications you make to the project under the same license, if you distribute your own files or sell versions that you produce. You are also compelled to link back to this github repository (https://github.com/UMS-Ultra/BubbleBox) in your own repository and/or where you sell them. Please check out the license.txt file to learn how you are allowed to use the files, and check out https://ohwr.org/cernohl for more information and CERNs FAQ.
 
@@ -69,7 +69,7 @@ Haybox Firmware is pretty unique in that you can swap between controller game mo
  * Mod X + Start + L - Melee Mode
  * Mod X + Start + Left - Project M/Project+ Mode
  * Mod X + Start + Down - Smash Ultimate Mode
- * Mod X + Start + Right - Tradition Fighter Hitbox Mode
+ * Mod X + Start + Right - Tradition Fighter Mode
  * Mod X + Start + B - Rivals of Aether Mode (Works as the Rushdown Revolt mode too)
 * Mod Y + Start + L - Default Keyboard Mode
 
