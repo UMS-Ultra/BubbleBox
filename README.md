@@ -45,12 +45,6 @@ If not, who knows where you biffed it.
 
 # Controller Setup
 
-## Setting up the controller for Steam Games with SteamInput
-* (This is where the Steam Input guide for Rivals and Rushdown Revolt will go if Xinput isn't functional soon.)
-
-## Bugs in SteamInput that we get to contend with
-* (This is where I point out and talk about the work arounds for the 2 main bugs you run into when setting up SteamInput, being the stick axis only being bindable once, and the need to bind the right trigger last to be able to save it)
-
 ## Dolphin and Slippi setup
 To use Haybox firmware on Dolphin and Slippi, I recommend checking out Haystacks guide on the [Haybox repo.](https://github.com/JonnyHaystack/HayBox) At least until I get around to making one myself.
 
@@ -58,7 +52,7 @@ To use Haybox firmware on Dolphin and Slippi, I recommend checking out Haystacks
 
 Haybox Firmware supports a wide variety of consoles, most of which it detects and sets automagically on it's own. When plugging into a PC, Wii, Gamecube, or N64, it should just work.
 
-But, to use on the Nintendo Switch, you have to hold 'X' on plug in.
+But, to use on the Nintendo Switch, you have to hold 'X' on plug in. This is also required to work on a Brook Wingman.
 
 ![image](Images/Switch%20Mode.jpg)
 
@@ -69,9 +63,9 @@ Haybox Firmware is pretty unique in that you can swap between controller game mo
  * Mod X + Start + L - Melee Mode
  * Mod X + Start + Left - Project M/Project+ Mode
  * Mod X + Start + Down - Smash Ultimate Mode
- * Mod X + Start + Right - Tradition Fighter Mode
+ * Mod X + Start + Right - Tradition Fighter Mode (Not Capcom Legal since the rule change, update coming soon)
  * Mod X + Start + B - Rivals of Aether Mode (Works as the Rushdown Revolt mode too)
-* Mod Y + Start + L - Default Keyboard Mode
+ * Mod Y + Start + L - Default Keyboard Mode
 
 And for the version of the Firmware that I provide, I include my custom Guilty Gear Strive keyboard mode.
 
@@ -86,7 +80,7 @@ By Default, the Melee mode is selected. Except when plugging in to a Switch wher
 
 ![image](Images/BubbleBox%20Layout.jpg)
 
-The BubbleBox uses a Layout that is very similar to a normal B0XX/Frame1/LBX
+The BubbleBox uses a Layout that is very similar to a B0XX, Frame1, LBX, or SmashSlab. I refer to controllers with these layouts as having the "Standard" layout.
 
 ## Firmware
 
@@ -135,18 +129,31 @@ The BubbleBox uses is the USB-C port from the [Bird-D Breakout board](https://gi
 
 # Variations
 
-* Standard BubbleBox with Switch Sockets
-* Standard BubbleBox without Switch Sockets
-* Left Handed BubbleBox with Switch Sockets
-* Left Handed BubbleBox without Switch Sockets
+### The first version of the BubbleBox is design to print out in one single piece. These are called the Mono-case versions, and come in right or left handed, and with or without switch sockets:
+* Mono-case Standard Right Handed BubbleBox with Switch Sockets
+* Mono-case Standard Right Handed BubbleBox without Switch Sockets
+* Mono-case Standard Left Handed BubbleBox with Switch Sockets
+* Mono-case Standard Left Handed BubbleBox without Switch Sockets
 
-Ther are also a few more variations in the works.
+### There's also the WASD Version, adds an extra button above the Down key that transforms the layout to a WASD/Arrow Keys/Mixbox style of controller:
+* Mono-case WASD Right Handed BubbleBox with Switch Sockets
+* Mono-case WASD Right Handed BubbleBox without Switch Sockets
+* Mono-case WASD Left Handed BubbleBox with Switch Sockets
+* Mono-case WASD Left Handed BubbleBox without Switch Sockets
 
-* Upcoming Split case that cane be printed on smaller printers, aiming for Prusa Mini sized chunks
-* Upcoming BubbleBox with W key, w&w/o switch sockets, L/R Handed versions
-* Upcoming H-tangled version that is smaller, w&w/o switch sockets, L/R Handed versions
-* Upcoming Big Hand Reverse Htangle version that is the same case size as the Standard BubbleBox, but where the movement hand row is moved up one and the thumb clusters are moved more inward, w and w/o switch sockets
-* Upcoming versions with extra 15-30 degree _cant_ between the top and bottom rows for better ergonomics maybe we'll see.
+#### And a Split Case variant that are designed to fit in machines with as small as 180mm² print beds like that of the Prusa Mini or Ender 3. If your printer has a build plate that is 180mm² or bigger, it will fit these pieces and the entire BubbleBox can be printed in 4 prints:
+* Split-case Standard Right Handed BubbleBox with Switch Sockets
+* Split-case Standard Left Handed BubbleBox with Switch Sockets
+
+### With the WASD Versions too:
+* Split-case WASD Right Handed BubbleBox with Switch Sockets
+* Split-case WASD Left Handed BubbleBox with Switch Sockets
+
+###### Techincally speaking, even the largest of the components is only actually 170mm by 140mm so if there are any printers out there with a size that fits that, it should work. Maybe.
+
+## There are also a few more variations in the works:
+
+* Upcoming versions with extra 15-30 degree _cant_ between the top and bottom rows for better ergonomics. Maybe. We'll see.
 
 # Keycaps
 
@@ -173,17 +180,22 @@ The Square Truncated keycaps come with one side shortened are designed to be ins
 ![image](Images/Thumb%20Clusters%20with%20Square%20Keycaps.jpg)
 ![image](Images/Thumb%20Clusters%20with%20Square%20Truncated%20Keycaps.jpg)
 
-I dunno why, but the B0XX, Frame 1, and LBX all do this for some reason. Some say this extra distance can be more comfortable for some people, so I included them.
+I dunno why, but the B0XX, Frame 1, and LBX all do this for some reason. Some say this extra distance can be more comfortable for some people, so I included them as an option. Some people fine this helps them not accidentally press A at the same time as any of the Cstick buttons.
 
 # Bill of Materials
 
 ## Screws
 
 * 9x  M3x6mm Button Head Cap Screws
-* 9x  M3 Initeq Heatset Threaded Inserts (Other inserts can work too, but will need to have their hole sizes adjusted)
+* 9x  M3 Initeq Heatset Threaded Inserts (Other inserts can work too, but ymmv)
 * 2x  M3x4mm Button Head Cap Screws or Socket Head Cap Screws
 * 2x  M2x6mm Socket Head Cap Screws or Button Head Cap Screws
 * 2x  M2 In-Sail Heatset Threaded Inserts (Optional)
+
+For the Split-Case versions, you will need some additional hardware:
+* +2x  M3x16mm Button Head Cap Screws
+* +2x  M3x8mm Button Head Cap Screws (Can be substituted for x1 6mm and x1 12mm if needed)
+* +4 M3 Initeq Heaset Threaded Inserts
 
 ## Electronic Components
 
@@ -197,12 +209,12 @@ I dunno why, but the B0XX, Frame 1, and LBX all do this for some reason. Some sa
 
 ## Switches
 
-* 22x Gateron Hotswap Sockets (Kailh might work, I haven't tested), or Low Profile Gateron Hotswap Sockets if using low profile switches in a socketless BubbleBox
-* 22x MX Style Switches of your choice
+* 22-23x Gateron Hotswap Sockets (Kailh might work, I haven't tested), or Low Profile Gateron Hotswap Sockets if using low profile switches in a socketless BubbleBox
+* 22-23x MX Style Switches of your choice
 
 ## Printed components
 
-* 22x Printed Keycaps or Other Keycaps of your choice
+* 22-23x Printed Keycaps or Other Keycaps of your choice
 * 1x  BubbleBox Case
 * 1x  Case Bottom Panel
 
@@ -227,28 +239,58 @@ As mentioned above, the files are made to print with a .4mm nozzle at a .2mm lay
 
 ![image](Images/Grey%20Case%20on%20Print%20Bed.jpg)
 ![image](Images/Hex%20Keycap%20Print%20Plate.jpg)
+ ## 1.5:  If a Split-Case BubbleBox variant, Assemble the case.
+  The Split-Case BubbleBox comes in 5 pieces, 2 for the main controller Body, and 3 for the Bottom Panel.
+ 
+![image](Images/Split%20Case%20Body%20Pieces.jpg)
+
+![image](Images/Split%20Case%20Bottom%20Panel.jpg)
+
+  If Building a Split Case variant, now is the time to install the 4 extra Heatset Threaded Inserts in the Following locations:
+
+![image](Images/Split%20Case%20M3%20Insert%20Locations%20Top.jpg)
+
+  And from the side:
+
+![image](Images/Split%20Case%20M3%20Insert%20Locations%20Side.jpg)
+
+
+ ## 1.5 and a Half:  Assemble the Split Case Controller Body.
+  If Building a Split Case variant, you should screw them together now. Now you need the x2 M3x16 and x2 M3x8mm screws in the following locations:
+
+![image](Images/Split%20Case%20M3%20Screw%20Locations%20Top.jpg)
+
+The one screw by the Pico mount is a bit of a pain, but necessary given the space constraints.
+###### If you need to, you can substitute the two M3x8mm screws for one M3x6mm and one M3x12mm screw. There is tolerance.
+
+ ## 1.5 and a Half 2:  Glue the Bottom Panel Pieces together.
+ The Split Case Bottom Panel comes in 3 pieces, and need to be glued together. IT IS EASY TO GLUE THE WRONG SIDES TOGETHER (because I forgot to add keying but eh maybe next time), So you have to make absolutely sure your pieces are on the correct sides. Take note of the Post locations:
+
+ ![image](Images/Split%20Case%20Bottom%20Panel%20Top.jpg)
 
  ## 2:  Install Heatset Threaded inserts in their correct holes.
- The 9 M3s go into the 4 along the top, the 4 Along the Bottom, and the one in the Center.
+  The 9 M3s go into the 4 along the top, the 4 Along the Bottom, and the one in the Center.
 
 ![image](Images/M3%20Insert%20Locations.jpg)
  
- The 2 M2s go into the posts with the larger holes to mount the Pico.
+  The 2 M2s go into the posts with the larger holes to mount the Pico.
 
 ![image](Images/M2%20Insert%20Locations.jpg)
  
   If you're not using threaded inserts to help mount the Pico, the 2 posts with Smaller holes are sized to directly accept the M2 screws. Just don't screw them too tight or you'll strip the plastic. Less than 0.1 Uggas of torque is required to keep the Pico in place.
 
  ## 3:  Glue Hotswap Sockets into the switch sockets.
- Yes there are two things called sockets, blame Gateron and Kailh for that.
- Every switch socket needs a hotswap socket super glued into the 2 holes. They need to be in the right orientation or the hotswap sockets will prevent the switches from being installed
+  Yes there are two things called sockets, blame Gateron and Kailh for that.
+  Every switch socket needs a hotswap socket super glued into the 2 holes. They need to be in the right orientation or the hotswap sockets will prevent the switches from being installed
 
 ![image](Images/Correct%20Hotswap%20Socket%20Orientation.jpg)
 
  ## 4:  Solder a short wire onto the Pico between the AGND to any GND pin.
  I typically run this wire from pin 8 to pin 33 across the backside of the Pico. I do not understand why, but people smarter than me say it's important for magic electricity reasons.
 
- * `(Remember to add photo of the AGND and GND connection)`
+![image](Images/Pico%20AGND%20to%20GND.jpg)
+
+Shown here with a slightly exaggerated wire so you can see the labels on the Pico going AGND to GND. I typically run it like this, across the back, but with just a straight short wire. You can run it across the top if you find it more convenient.
 
  ## 5:  Connect the Pico to the Bird-D.
  I typically run about 5-6in/120mm-150mm lengths of wire to connect the Pico and the Bird-D Breakout Board. There are 6 total connections you will need to make.
@@ -259,12 +301,11 @@ As mentioned above, the files are made to print with a .4mm nozzle at a .2mm lay
  5. VSYS on the Pico to 3V on the Bird-D
  6. GND(I use pin 38 or 33) on the Pico to GND on the Bird-D
 
- ![image](Images/Wiring%20Diagram.jpg)
+ ![image](Images/Wiring%20Diagram%20WASD.jpg)
 
  When done correctly it should look something like this:
 
 ![image](Images/Wired%20BirdD.jpg)
- * `(Remember to update this photo later with just a Pico wired to a Bird-D)` 
 
  ## 6:  Verify that the USB-C connection is working.
  At this point, it is good to check that everything is working by plugging into your PC through the freshly installed USB-C port. If it's a new Pico, then it should register as a storage device on your computer. If you haven't done so already, now is a good time to install the firmware using the guide at the top of this readme.
@@ -273,15 +314,13 @@ As mentioned above, the files are made to print with a .4mm nozzle at a .2mm lay
  These will run from the Numbered GPIO Pins on the Pico, to one side of their respective hot swap socket. These wire lengths are slightly over sized, so you have a little bit of wiggle room, and so you can trim them later if you want to.
 
     1.  Solder 8in/200mm length wire to pins GP17(Up), GP18(MS), and GP5(L/LT)
-    2.  Solder 7in/175mm length wire to pins GP19(Z/RB), GP20(LS), and GP4(Left)
+    2.  Solder 7in/175mm length wire to pins GP19(Z/RB), GP20(LS), GP1(Up2) and GP4(Left)
     3.  Solder 6in/150mm length wire to pins GP21(X), GP22(Y), and GP3(Down)
     4.  Solder 5in/125mm length wire to pins GP27(R/RT), GP26(B), and GP2(Right), and GP10(Select)
     5.  Solder 4in/100mm length wire to pins GP16(C-Right), and GP11(Home)
     6.  Solder 3in/75mm  length wire to pins GP6(ModX), and GP7(ModY)
     7.  Solder 2in/50mm  length wire to pins GP14(A), GP12,(C-Up), GP13(C-Left), and GP0(Start)
     8.  Solder 1in/25mm  length wire to pins GP15(C-Down)
-
- * `(Remember to add photo of Octopus Pico with all the wires flopping around)`
 
  ## 15: Mount Pico and Solder Signal wires to the Switch Sockets.
   Once every wire is soldering onto every relevant pin on the Pico, you can do some wire management, screw the Pico onto it's mount, trim any excess length of wire you desire for aesthetics or to ease routing, and solder ever wire to one side of its buttons hotswap socket. Making extra damn sure you don't trim the wrong wire or solder any wires to the wrong switches because at this point it'll be a pain in the ass to fix it.
@@ -294,7 +333,7 @@ As mentioned above, the files are made to print with a .4mm nozzle at a .2mm lay
 ![image](Images/Pico%20Ground%20Loop.jpg)
 
  ## 16: Install all 22x switches into their sockets.
- You have to make sure to orrient them correctly otherwise you will mash up the pins on the switches. Once they are installed, you can install the keycaps.
+ You have to make sure to orient them correctly otherwise you will mash up the pins on the switches. Once they are installed, you can install the keycaps.
 
  ## 17: Test everything out.
  Once you verify everything is functioning, you're done constructing your BubbleBox!
@@ -307,7 +346,7 @@ When resting the controller on your lap, you might find that with bare plastic i
 
 ![image](Images/Cut%20EVA%20Foam%20Grip%20Sheet.jpg)
 
-Alternatively, you could also get some phone grip tape or other rubbery grip tapes. This is generally a soft-ish rubber material (not like skateboard sandpaper grip tape, unless you're into that I suppose). I find this doesn't work as well as the EVA Foam, but it's another option.
+Alternatively, you could also get some phone grip tape or other rubbery grip tapes. This is generally a soft-ish rubber material (not like skateboard sandpaper grip tape, unless you're into that I suppose). I find this doesn't work as well as the EVA Foam, but it's another option. Here is a photo of one of my First BubbleBoxes with some adhesive cellphone grippy pad things.
 
 ![image](Images/Old%20BubbleBox%20Purple%20Phone%20Grip%20Tape.jpg)
 
