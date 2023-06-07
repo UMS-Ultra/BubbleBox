@@ -298,7 +298,7 @@ Shown here with a slightly exaggerated wire so you can see the labels on the Pic
  3. TP3 on the Pico to D+ on the Bird-D
  3. GP28 on the Pico to GCD/D3V on the Bird-D
  4. VBUS on the Pico to 5V on the Bird-D
- 5. VSYS on the Pico to 3V on the Bird-D
+ 5. VSYS on the Pico to VYSYS on the Bird-D
  6. GND(I use pin 38 or 33) on the Pico to GND on the Bird-D
 
  ![image](Images/Wiring%20Diagram%20WASD.jpg)
